@@ -10,9 +10,9 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-// Initialize the FirebaseUI Widget using Firebase.
 const ui = new firebaseui.auth.AuthUI(firebase.auth());
 
+// Initialize the FirebaseUI Widget using Firebase.
 const uiConfig = {
     callbacks: {
         signInSuccessWithAuthResult: function (authResult, redirectUrl) {

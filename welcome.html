@@ -6,11 +6,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="./assets/css/welcome.css" rel="stylesheet" type="text/css">
-</head>
+</head> 
 
 <body>
-    <span>Welcome, you are now signed in.</span>
+    <div class="title">
+        <span id="black">Welcome, you are now signed in!</span>
+    </div>
+    <!-- partial:index.partial.html -->
+    <div class="container"> 
+        <div class="moji">😄</div>
+        <div class="title" id="black">This article is</div>
+        <div>
+            <form action="/" method="post">
+                <div class="slider">   
+                    <span>Unbiased</span>
+                    <input type="range" value="0" min="0" max="10" step="1" id="bias">
+                    <span id="red">Biased</span>
+                </div>
+                <div class="title">My political position is</div>
+                <div class="slider">
+                    <span id="black">Left</span>
+                    <input type="range" value="0" min="0" max="10" step="1" id="position">
+                    <span id="black">Right</span>
+                </div>
+                <p></p>
+                <div class="title">Article's URL:</div>
+                <div>
+                    <input type="url" id="article">
+                </div>
+                <div class="container center">
+                    <button id="button" type="button" class="btn btn-primary btn-lg" id="view">View users' ratings</button>
+                </div>  
+            </form>                  
+        </div>
+    </div>
+    <!-- partial -->
+    <script type="module" src="./slider.js"></script>
 </body>
 
 </html>

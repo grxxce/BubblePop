@@ -5,3 +5,8 @@ document.querySelector('#sign_out').addEventListener('click', () => {
         }
     });
 });
+
+const button = document.getElementById('check-article');
+button.addEventListener('click', (e) => {
+    document.location.href = './welcome.html';
+});
